@@ -11,21 +11,19 @@
 		http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
         http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
-    <context:component-scan base-package="com.zing.bubble" />
+    <context:component-scan base-package="com.cmcc.hjgh.sample" />
     <!-- 读入配置属性文件 -->
 	<bean id="configProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
 	    <property name="locations">
 	        <list>
-	            <value> classpath*:bubble.properties</value>
-	            <value> classpath*:springboot.properties</value>
-	            <value> classpath*:dubbo.properties</value>
-	            <value> classpath*:jdbc.properties</value>
+	            <value> classpath:application.properties</value>
+	            <value> classpath:jdbc.properties</value>
 	        </list>
 	    </property>
 	</bean>
 	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer">
 	    <property name="properties" ref="configProperties" />
 	</bean>
-	<import resource="spring-dao.xml" />
-	<import resource="dubbo.xml" />
+
+    <import resource="spring-dao.xml"/>
 </beans>

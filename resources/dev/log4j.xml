@@ -3,7 +3,7 @@
 <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
 
 	<appender name="default-out" class="org.apache.log4j.RollingFileAppender">
-        <param name="File" value="/var/log/bubble/mc/default.log" />
+        <param name="File" value="/var/log/bubble/party/default.log" />
 		<param name="MaxFileSize" value="102400KB"/>
 		<param name="MaxBackupIndex" value="5"/>
 		<param name="Encoding" value="UTF-8" />
@@ -26,7 +26,7 @@
 	</appender>
 
 	<appender name="debug-out" class="org.apache.log4j.RollingFileAppender">
-        <param name="File" value="/var/log/bubble/mc/debug.log" />
+        <param name="File" value="/var/log/bubble/party/debug.log" />
 		<param name="MaxFileSize" value="102400KB"/>
 		<param name="MaxBackupIndex" value="5"/>
 		<param name="Encoding" value="UTF-8" />
@@ -40,7 +40,7 @@
 	</appender>
 
 	<appender name="info-out" class="org.apache.log4j.RollingFileAppender">
-        <param name="File" value="/var/log/bubble/mc/info.log" />
+        <param name="File" value="/var/log/bubble/party/info.log" />
 		<param name="MaxFileSize" value="102400KB"/>
 		<param name="MaxBackupIndex" value="5"/>
 		<param name="Encoding" value="UTF-8" />
@@ -55,7 +55,7 @@
 	</appender>
 
 	<appender name="warn-out" class="org.apache.log4j.RollingFileAppender">
-        <param name="File" value="/var/log/bubble/mc/warn.log" />
+        <param name="File" value="/var/log/bubble/party/warn.log" />
 		<param name="MaxFileSize" value="102400KB"/>
 		<param name="MaxBackupIndex" value="5"/>
 		<param name="Encoding" value="UTF-8" />
@@ -70,7 +70,7 @@
 	</appender>
 
 	<appender name="error-out" class="org.apache.log4j.RollingFileAppender">
-        <param name="File" value="/var/log/bubble/mc/error.log" />
+        <param name="File" value="/var/log/bubble/party/error.log" />
 		<param name="MaxFileSize" value="102400KB"/>
 		<param name="MaxBackupIndex" value="5"/>
 		<param name="Encoding" value="UTF-8" />
