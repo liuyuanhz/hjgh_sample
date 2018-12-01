@@ -1,4 +1,4 @@
-package com.cmcc.hjgh.sample;
+package com.cmcc.hjgh.sample.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
